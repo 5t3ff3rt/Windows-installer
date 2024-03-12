@@ -23,6 +23,7 @@ Function main() {
         winget install -h -e --id Google.Chrome
         winget install -h -e --id BelgianGovernment.Belgium-eIDmiddleware
         winget install -h -e --id BelgianGovernment.eIDViewer
+        winget install -h -e --id Adobe.Acrobat.Reader.64-bit
         # uninstall programs
         winget uninstall Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe --accept-source-agreements --silent
         winget uninstall Microsoft.Getstarted_8wekyb3d8bbwe --accept-source-agreements --silent
