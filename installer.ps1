@@ -1,18 +1,18 @@
 # get latest winget download url
-$URL = "https://api.github.com/repos/microsoft/winget-cli/releases/latest"
-$URL = (Invoke-WebRequest -Uri $URL).Content | ConvertFrom-Json |
-        Select-Object -ExpandProperty "assets" |
-        Where-Object "browser_download_url" -Match '.msixbundle' |
-        Select-Object -ExpandProperty "browser_download_url"
+$API_URL = "https://api.github.com/repos/microsoft/winget-cli/releases/latest"
+$DOWNLOAD_URL = $(Invoke-RestMethod $API_URL).assets.browser_download_url |
+    Where-Object {$_.EndsWith(".msixbundle")}
+
 
 # download
-Invoke-WebRequest -Uri $URL -OutFile "Setup.msix" -UseBasicParsing
+Invoke-WebRequest -URI $DOWNLOAD_URL -OutFile winget.msixbundle -UseBasicParsing
+
 
 # install
-Add-AppxPackage -Path "Setup.msix"
+Add-AppxPackage winget.msixbundle
 
 # delete file
-Remove-Item "Setup.msix"
+Remove-Item winget.msixbundle
 
 # winget script
 Function main() {
