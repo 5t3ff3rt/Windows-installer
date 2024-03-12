@@ -70,3 +70,5 @@ Function Test-CommandExists
 
 # run the main function
 main
+# complete message
+echo "SCRIPT HAS FINISHED. YOU MAY CLOSE THE WINDOW!"
