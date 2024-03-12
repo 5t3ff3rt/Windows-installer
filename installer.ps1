@@ -5,6 +5,7 @@ $DOWNLOAD_URL = $(Invoke-RestMethod $API_URL).assets.browser_download_url |
 
 
 # download
+$ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -URI $DOWNLOAD_URL -OutFile winget.msixbundle -UseBasicParsing
 
 
