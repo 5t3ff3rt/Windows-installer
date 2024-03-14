@@ -21,6 +21,8 @@ Function main() {
     $exists = Test-CommandExists winget
 
     if ($exists) {
+        # update existing programs
+        winget upgrade --all --accept-source-agreements
         # install programs
         winget install -h -e --id Google.Chrome
         winget install -h -e --id BelgianGovernment.Belgium-eIDmiddleware
@@ -51,8 +53,6 @@ Function main() {
         winget uninstall Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe --accept-source-agreements --silent
         winget uninstall Microsoft.Office.OneNote_8wekyb3d8bbwe --accept-source-agreements --silent
         winget uninstall cortana --accept-source-agreements --silent
-        # update existing programs
-        winget upgrade --all
     }
 }
 
