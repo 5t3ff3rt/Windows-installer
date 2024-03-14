@@ -1,8 +1,12 @@
 #install Microsoft.UI.2.8.6.Xaml
 $progressPreference = 'silentlyContinue'
+New-Item -ItemType Directory -Path xaml
+Expand-Archive -Path xaml.zip -DestinationPath xaml
 Invoke-WebRequest `
     -URI https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.6 `
     -OutFile xaml.zip -UseBasicParsing
+New-Item -ItemType Directory -Path xaml
+Expand-Archive -Path xaml.zip -DestinationPath xaml
 Remove-Item xaml.zip
 Remove-Item xaml -Recurse
 
