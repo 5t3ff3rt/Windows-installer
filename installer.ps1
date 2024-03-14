@@ -1,4 +1,4 @@
-$progressPreference = 'silentlyContinue'
+#$progressPreference = 'silentlyContinue'
 
 # install Microsoft.UI.2.8.6.Xaml
 Invoke-WebRequest `
