@@ -29,30 +29,28 @@ Function main() {
         winget install -h -e --id BelgianGovernment.eIDViewer
         winget install -h -e --id Adobe.Acrobat.Reader.64-bit
         # uninstall programs
-        winget uninstall Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.Getstarted_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall 9NBLGGH42THS --accept-source-agreements --silent
-        winget uninstall Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall 9NBLGGH5FV99 --accept-source-agreements --silent
-        winget uninstall Microsoft.BingWeather_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.People_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.Wallet_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.WindowsMaps_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.ZuneVideo_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.MixedReality.Portal_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.GetHelp_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.Todos_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.BingNews_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall MicrosoftTeams_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall MicrosoftCorporationII.MicrosoftFamily_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall disney+ --accept-source-agreements --silent
-        winget uninstall Clipchamp.Clipchamp_yxz26nhyzhsrt --accept-source-agreements --silent
-        winget uninstall Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall Microsoft.Office.OneNote_8wekyb3d8bbwe --accept-source-agreements --silent
-        winget uninstall cortana --accept-source-agreements --silent
+        winget uninstall Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.Getstarted_8wekyb3d8bbwe --silent
+        winget uninstall 9NBLGGH42THS --silent
+        winget uninstall 9NBLGGH5FV99 --silent
+        winget uninstall Microsoft.BingWeather_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.People_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.Wallet_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.WindowsMaps_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.ZuneVideo_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.MixedReality.Portal_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.GetHelp_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.BingNews_8wekyb3d8bbwe --silent
+        winget uninstall MicrosoftTeams_8wekyb3d8bbwe --silent
+        winget uninstall MicrosoftCorporationII.MicrosoftFamily_8wekyb3d8bbwe --silent
+        winget uninstall MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe --silent
+        winget uninstall disney+ --silent
+        winget uninstall Clipchamp.Clipchamp_yxz26nhyzhsrt --silent
+        winget uninstall Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe --silent
+        winget uninstall Microsoft.Office.OneNote_8wekyb3d8bbwe  --silent
+        winget uninstall cortana --silent
+        winget uninstall Microsoft.DevHome --silent
     }
 }
 
