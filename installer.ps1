@@ -1,8 +1,15 @@
+#install Microsoft.UI.2.8.6.Xaml
+$progressPreference = 'silentlyContinue'
+Invoke-WebRequest `
+    -URI https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.6 `
+    -OutFile xaml.zip -UseBasicParsing
+Remove-Item xaml.zip
+Remove-Item xaml -Recurse
+
 # install latest winget version
 $API_URL = "https://api.github.com/repos/microsoft/winget-cli/releases/latest"
 $DOWNLOAD_URL = $(Invoke-RestMethod $API_URL).assets.browser_download_url |
     Where-Object {$_.EndsWith(".msixbundle")}
-$progressPreference = 'silentlyContinue'
 Invoke-WebRequest -URI $DOWNLOAD_URL -OutFile winget.msixbundle -UseBasicParsing
 Add-AppxPackage winget.msixbundle
 Remove-Item winget.msixbundle
