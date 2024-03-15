@@ -70,4 +70,4 @@ Function Test-CommandExists
 # run the main function
 main
 # complete message
-echo -e "/n !SCRIPT HAS FINISHED, YOU MAY CLOSE THE WINDOW!"
+echo "!SCRIPT HAS FINISHED, YOU MAY CLOSE THE WINDOW!"
