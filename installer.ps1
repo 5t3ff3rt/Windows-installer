@@ -1,4 +1,4 @@
-#install Microsoft.UI.2.8.6.Xaml
+#install Microsoft.UI.2.8.6.Xaml2
 $progressPreference = 'silentlyContinue'
 Invoke-WebRequest `
     -URI https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.6 `
